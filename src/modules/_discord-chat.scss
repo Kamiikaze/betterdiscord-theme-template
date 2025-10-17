@@ -1,0 +1,212 @@
+/**
+ * Discord Chat Module
+ * Styling for chat messages, input, and related elements
+ */
+
+// Chat container
+.chat-2ZfjoI {
+  .content-1SgpWY {
+    background-color: var(--background-primary);
+  }
+}
+
+// Message container
+.message-2CShn3 {
+  &:hover {
+    background-color: var(--background-secondary);
+  }
+
+  &.mentioned-Tre-dv {
+    background-color: rgba(250, 166, 26, 0.05);
+    border-left: 2px solid #faa61a;
+
+    &:hover {
+      background-color: rgba(250, 166, 26, 0.08);
+    }
+  }
+}
+
+// Message content
+.markup-eYLPri {
+  color: var(--text-primary);
+
+  code {
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--background-tertiary);
+  }
+}
+
+// Username
+.username-h_Y3Us {
+  color: var(--text-primary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Timestamp
+.timestamp-p1Df1m {
+  color: var(--text-muted);
+}
+
+// Message header
+.header-2jRmjb {
+  margin-bottom: 2px;
+}
+
+// Reactions
+.reaction-3vwAF2 {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+
+  &:hover {
+    background-color: var(--background-tertiary);
+    border-color: var(--text-muted);
+  }
+
+  &.reactionMe-1PwQAc {
+    background-color: rgba(var(--primary-color-rgb), 0.15);
+    border-color: var(--primary-color);
+  }
+}
+
+// Embeds
+.embed-hKpSrO {
+  .embedAuthor-3l5luH,
+  .embedTitle-2n1pEb,
+  .embedDescription-1Cuq9a,
+  .embedFields-2IPs5Z {
+    color: var(--text-primary);
+  }
+
+  .embedFooter-1eqGbu {
+    color: var(--text-muted);
+  }
+}
+
+// Attachments
+.attachment-1PZZB2 {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+}
+
+// Message input area
+.form-3gdLxP {
+  .channelTextArea-1VQBuV {
+    background-color: var(--background-tertiary);
+
+    .placeholder-1rCBhr {
+      color: var(--text-muted);
+    }
+
+    .slateTextArea-27tjG0 {
+      color: var(--text-primary);
+    }
+  }
+}
+
+// Message buttons
+.buttons-uaqb-5 {
+  .button-3bklZh {
+    color: var(--text-muted);
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+}
+
+// Upload modal
+.uploadModal-2ifh8j {
+  background-color: var(--background-primary);
+
+  .inner-rBP-MS {
+    background-color: var(--background-secondary);
+    border: 2px dashed var(--background-tertiary);
+  }
+}
+
+// Thread
+.container-3wLKDe {
+  background-color: var(--background-secondary);
+
+  .spine-29OFwR {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Typing indicator
+.typing-3eiiL_ {
+  .text-1DUST5 {
+    color: var(--text-muted);
+  }
+}
+
+// Jump to present
+.jumpToPresentBar-1cEnH0 {
+  background-color: var(--primary-color);
+  color: white;
+
+  &:hover {
+    background-color: var(--primary-color);
+    opacity: 0.9;
+  }
+}
+
+// Divider
+.divider-2rZoKK {
+  &.isUnread-3Lojb- {
+    border-color: var(--accent-color);
+
+    .content-3spvdd {
+      color: var(--accent-color);
+    }
+
+    .unreadPill-3nEWYM {
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+// Quoted message
+.repliedMessage-3Z6XBG {
+  &::before {
+    border-color: var(--background-tertiary);
+  }
+
+  .username-h_Y3Us {
+    opacity: 0.6;
+  }
+}
+
+// System messages
+.systemMessage-1H1Z20 {
+  .content-1Wn3gB {
+    color: var(--text-muted);
+  }
+}
+
+// Pinned messages
+.messagesPopoutWrap-3zryHW {
+  background-color: var(--background-primary);
+
+  .messageGroupWrapper-1jf_7C {
+    background-color: var(--background-secondary);
+
+    &:hover {
+      background-color: var(--background-tertiary);
+    }
+  }
+}
+
+// Auto-complete
+.autocomplete-3NRXG8 {
+  .selectorSelected-2M0IGv {
+    background-color: var(--background-tertiary);
+  }
+
+  .selector-nbyEfM:hover {
+    background-color: var(--background-tertiary);
+  }
+}

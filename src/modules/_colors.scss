@@ -1,0 +1,79 @@
+/* #region Colors */
+/**
+ * Colors Module
+ * Handles all color-related styling for Discord elements
+ */
+
+// Background colors
+.theme-dark {
+  --background-primary: var(--background-primary);
+  --background-secondary: var(--background-secondary);
+  --background-tertiary: var(--background-tertiary);
+  --background-accent: var(--accent-color);
+}
+
+// Text colors
+.theme-dark {
+  --text-normal: var(--text-primary);
+  --text-muted: var(--text-muted);
+  --text-link: var(--primary-color);
+  --header-primary: var(--text-primary);
+  --header-secondary: var(--text-secondary);
+}
+
+// Interactive elements
+.theme-dark {
+  --interactive-normal: var(--text-secondary);
+  --interactive-hover: var(--text-primary);
+  --interactive-active: var(--text-primary);
+  --interactive-muted: var(--text-muted);
+}
+
+// Buttons
+.button-f2h6uQ {
+  &.lookFilled-yCfaCM {
+    &.colorPrimary-2-Lusz {
+      background-color: var(--primary-color);
+    }
+    &.colorGreen-3y-Z79 {
+      background-color: var(--secondary-color);
+    }
+    &.colorRed-rQXKgM {
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+// Status colors
+.theme-dark {
+  --status-positive: var(--secondary-color);
+  --status-warning: #faa61a;
+  --status-danger: var(--accent-color);
+}
+
+// Scrollbar
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-tertiary);
+
+  &:hover {
+    background-color: var(--text-muted);
+  }
+}
+
+// Mentions and highlights
+.mention {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color);
+
+  &:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.2);
+  }
+}
+
+// Selection
+::selection {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+/* #endregion Colors */

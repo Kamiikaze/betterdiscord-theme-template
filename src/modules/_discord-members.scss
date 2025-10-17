@@ -1,0 +1,178 @@
+/**
+ * Discord Members Module
+ * Styling for member list and user profiles
+ */
+
+// Members list container
+.members-3WRCEx {
+  .membersWrap-3NUR2t {
+    min-width: 240px;
+  }
+}
+
+// Member list item
+.member-2gU6Ar {
+  padding: var(--spacing-small);
+  margin: 2px var(--spacing-small);
+  border-radius: var(--border-radius);
+
+  &:hover {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Member username
+.roleColor-nA7BqX {
+  color: var(--text-primary);
+}
+
+// Member tag
+.nameTag-sc-gpq {
+  .username {
+    color: var(--text-primary);
+  }
+
+  .discriminator-WV5K5s {
+    color: var(--text-muted);
+  }
+}
+
+// Offline members
+.membersGroup-2eiWxl {
+  color: var(--text-muted);
+  font-weight: var(--font-weight-bold);
+}
+
+// Activity
+.activityText-1rR-8O {
+  color: var(--text-secondary);
+}
+
+// Rich presence
+.activity-2EQDZv {
+  .nameNormal-3ljeXm {
+    color: var(--text-primary);
+  }
+
+  .details-EvgR0c,
+  .state-1PQrkn {
+    color: var(--text-secondary);
+  }
+}
+
+// User popout
+.userPopout-2j1gM4 {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-high);
+
+  .body-1Ukv50 {
+    background-color: var(--background-secondary);
+  }
+
+  .footer-3naVBw {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// User modal (profile)
+.root-8LYsGj {
+  .topSection-13QKHs {
+    background-color: var(--background-primary);
+  }
+
+  .body-16rSsp {
+    background-color: var(--background-primary);
+  }
+}
+
+// Profile banner
+.banner-1YaD3N {
+  background-color: var(--primary-color);
+}
+
+// Profile tabs
+.tabBarItem-3dfX8P {
+  color: var(--text-muted);
+
+  &.selected-1JLFLy {
+    color: var(--text-primary);
+    border-bottom-color: var(--primary-color);
+  }
+
+  &:hover:not(.selected-1JLFLy) {
+    color: var(--text-secondary);
+  }
+}
+
+// About me section
+.markup-eYLPri {
+  .title-3hptVQ {
+    color: var(--text-primary);
+  }
+}
+
+// Roles section
+.role-2TIOKu {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--background-tertiary);
+
+  .roleCircle-1EgnSL {
+    flex-shrink: 0;
+  }
+}
+
+// Note section
+.textarea-2Oqzxw {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+
+  &:focus {
+    background-color: var(--background-secondary);
+  }
+}
+
+// Member count
+.membersGroup-2eiWxl {
+  padding: var(--spacing-small);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+// Status in member list
+.avatar-6qzftW {
+  position: relative;
+}
+
+.pointerEvents-9SZWKj {
+  rect[mask="url(#svg-mask-status-online)"],
+  rect[mask="url(#svg-mask-status-idle)"],
+  rect[mask="url(#svg-mask-status-dnd)"] {
+    fill: currentColor;
+  }
+}
+
+// Custom status
+.customStatus-3XAoF9 {
+  .emoji {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+// User badges
+.profileBadges-2pItdR {
+  .profileBadge-2BqF-Z {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+// Connection icons
+.connectedAccount-2PrNaX {
+  border: 1px solid var(--background-tertiary);
+  background-color: var(--background-secondary);
+
+  &:hover {
+    background-color: var(--background-tertiary);
+  }
+}

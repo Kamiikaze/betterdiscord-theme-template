@@ -1,0 +1,76 @@
+/**
+ * Fonts Module
+ * Handles typography and font styling
+ */
+
+// Base font settings
+body,
+.appMount-2yBXZl {
+  font-family: var(--primary-font);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-31SJ6t,
+.header-3OsQeK {
+  font-weight: var(--font-weight-bold);
+}
+
+// Code blocks
+code,
+.inline {
+  font-family: var(--code-font);
+  font-size: calc(var(--font-size-base) * 0.875);
+}
+
+.hljs,
+pre code {
+  font-family: var(--code-font);
+}
+
+// Message text
+.markup-eYLPri {
+  font-size: var(--font-size-base);
+  line-height: 1.375;
+}
+
+// Username
+.username-h_Y3Us {
+  font-weight: var(--font-weight-bold);
+}
+
+// Timestamp
+.timestamp-p1Df1m {
+  font-size: calc(var(--font-size-base) * 0.75);
+}
+
+// Channel names
+.name-28HaxV {
+  font-weight: var(--font-weight-bold);
+}
+
+// Input placeholders
+::placeholder {
+  font-family: var(--primary-font);
+  opacity: 0.6;
+}
+
+// Bold text
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+}
+
+// Text rendering optimization
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,5 @@
+# Ignore local build files
+*.local.theme.css
+
+# Node modules
+node_modules/

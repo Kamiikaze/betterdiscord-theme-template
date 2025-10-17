@@ -1,0 +1,138 @@
+/**
+ * Discord Base Module
+ * General Discord App styling
+ * (Window Bar, Scrollbars, Dividers, Settings, Shop, Quests etc.)
+ */
+
+// App mount
+.appMount-2yBXZl {
+  display: flex;
+}
+
+// Base layer
+.baseLayer-W6S8cY {
+  position: relative;
+}
+
+// Container
+.container-2cd8Mz {
+  display: flex;
+  height: 100vh;
+}
+
+// Content wrapper
+.base-2jDfDU {
+  position: relative;
+  display: flex;
+  border-radius: 0;
+}
+
+// Scrollers
+.scroller-3X7KbA,
+.scrollerBase-_bVAAt {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--background-tertiary);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+
+    &:hover {
+      background-color: var(--text-muted);
+    }
+  }
+}
+
+// Dividers
+.divider-IqmEqJ {
+  height: 1px;
+  background-color: var(--background-tertiary);
+  border: none;
+}
+
+// Tooltips
+.tooltip-14MtrL {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-elevation-medium);
+
+  .tooltipPointer-sMBQqe {
+    border-top-color: var(--background-tertiary);
+  }
+}
+
+// Badges
+.textBadge-1tJ5Ps,
+.base-1pYU8j {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+// Status indicators
+.statusItem-2hiCNB {
+  &[style*="background-color: hsl(139"] {
+    background-color: var(--secondary-color) !important;
+  }
+
+  &[style*="background-color: hsl(38"] {
+    background-color: #faa61a !important;
+  }
+
+  &[style*="background-color: hsl(359"] {
+    background-color: var(--accent-color) !important;
+  }
+}
+
+// Loading spinner
+.spinner-2RT1ol {
+  .spinnerItem-3GzSlQ {
+    background-color: var(--primary-color);
+  }
+}
+
+// Search bar
+.search-39IXmY {
+  .searchBar-jGtisZ {
+    background-color: var(--background-tertiary);
+
+    &:focus-within {
+      background-color: var(--background-secondary);
+    }
+  }
+}
+
+// Tab bar
+.topPill-3DJJNV {
+  .item-3XjbnG {
+    color: var(--text-muted);
+
+    &.selected-g-kMVV {
+      color: var(--text-primary);
+      background-color: var(--background-tertiary);
+    }
+  }
+}
+
+// Notices
+.notice-2HEN-u {
+  background-color: var(--primary-color);
+
+  &.noticeInfo-3_iTE1 {
+    background-color: var(--primary-color);
+  }
+
+  &.noticeSuccess-1krf0w {
+    background-color: var(--secondary-color);
+  }
+
+  &.noticeDanger-1y0VfW {
+    background-color: var(--accent-color);
+  }
+}

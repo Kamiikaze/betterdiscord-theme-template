@@ -1,0 +1,168 @@
+/**
+ * Discord Sidebar Module
+ * Styling for server list and channel sidebar
+ */
+
+// Server list container
+.guilds-2JjMmN {
+  .scroller-3X7KbA {
+    padding: var(--spacing-small) 0;
+  }
+}
+
+// Server items
+.listItem-3SmSlK {
+  .wrapper-3kah-n {
+    transition: all var(--transition-speed) ease;
+
+    &:hover {
+      border-radius: calc(var(--border-radius) * 0.6);
+      transform: translateY(-2px);
+    }
+  }
+
+  .pill-2RsI5Q {
+    .item-2LIpTv {
+      background-color: var(--text-primary);
+    }
+  }
+}
+
+// Home icon
+.homeIcon-r0w4ny {
+  path {
+    fill: var(--text-primary);
+  }
+}
+
+// Channel sidebar
+.sidebar-1tnWFu {
+  .container-3XgAHv {
+    background-color: var(--background-secondary);
+  }
+}
+
+// Channel list
+.content-1gYQeQ {
+  .containerDefault-YUSmu3 {
+    &:hover {
+      background-color: var(--background-tertiary);
+    }
+  }
+
+  .modeSelected-3DmyhH {
+    background-color: var(--background-tertiary);
+
+    .name-28HaxV {
+      color: var(--text-primary);
+    }
+  }
+}
+
+// Channel names
+.name-28HaxV {
+  color: var(--text-secondary);
+}
+
+// Channel icons
+.icon-2W8DHg {
+  color: var(--text-muted);
+}
+
+// Voice channel
+.wrapper-3Hk9OB {
+  &:hover {
+    background-color: var(--background-tertiary);
+  }
+
+  &.selected-1-Z6gm {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Category
+.containerDefault-3TQ5YN {
+  color: var(--text-muted);
+
+  &:hover {
+    color: var(--text-secondary);
+  }
+}
+
+// User area (bottom)
+.panels-3wFtMD {
+  background-color: var(--background-secondary);
+
+  .container-YkUktl {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Profile panel
+.avatarWrapper-1B9FTW {
+  .avatar-6qzftW {
+    border-radius: 50%;
+  }
+}
+
+// Status picker
+.menu-1QYKjX {
+  .item-1OdjEX {
+    &:hover {
+      background-color: var(--background-tertiary);
+    }
+  }
+
+  .colorDefault-CDqZdO {
+    &:active {
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+// Invite button
+.button-1EGGcP {
+  color: var(--text-primary);
+
+  &:hover {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Folder
+.wrapper-38slSD {
+  .folder-241Joy {
+    background-color: var(--background-secondary);
+
+    &:hover {
+      background-color: var(--background-tertiary);
+    }
+  }
+
+  &.collapsed-1GMuSb {
+    .folder-241Joy {
+      border-radius: var(--border-radius);
+    }
+  }
+}
+
+// Unread indicator
+.numberBadge-37OJ3S {
+  background-color: var(--accent-color) !important;
+  color: white;
+}
+
+// Mention badge
+.mentionsBadge-7Be-gR {
+  background-color: var(--accent-color) !important;
+}
+
+// Server boost progress
+.tierMarkerBackground-G8FoN2 {
+  background: var(--primary-color);
+}
+
+// Search bar in channels
+.searchBar-2aylmZ {
+  background-color: var(--background-tertiary);
+}

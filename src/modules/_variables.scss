@@ -1,0 +1,49 @@
+/* #region Variables */
+/**
+ * Variables Module
+ * Defines CSS custom properties that can be overridden by user variables
+ */
+
+:root {
+  // Colors
+  --primary-color: #5865f2;
+  --secondary-color: #3ba55d;
+  --accent-color: #ed4245;
+  --background-primary: #36393f;
+  --background-secondary: #2f3136;
+  --background-tertiary: #202225;
+  --text-primary: #dcddde;
+  --text-secondary: #b9bbbe;
+  --text-muted: #72767d;
+
+  // Backgrounds
+  --custom-background: none;
+  --background-blur: 5px;
+  --background-opacity: 0.85;
+
+  // Fonts
+  --primary-font: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: "Consolas", "Monaco", monospace;
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  // Sizing
+  --server-size: 48px;
+  --avatar-size-small: 32px;
+  --avatar-size-medium: 40px;
+  --avatar-size-large: 80px;
+  --border-radius: 8px;
+  --border-radius-small: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  // Effects
+  --shadow-elevation-low: 0 1px 5px rgba(0, 0, 0, 0.2);
+  --shadow-elevation-medium: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-elevation-high: 0 8px 16px rgba(0, 0, 0, 0.4);
+  --transition-speed: 0.2s;
+}
+
+/* #endregion Variables */

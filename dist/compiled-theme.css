@@ -1,0 +1,975 @@
+/* #region Variables */
+/**
+ * Variables Module
+ * Defines CSS custom properties that can be overridden by user variables
+ */
+:root {
+  --primary-color: #5865f2;
+  --secondary-color: #3ba55d;
+  --accent-color: #ed4245;
+  --background-primary: #36393f;
+  --background-secondary: #2f3136;
+  --background-tertiary: #202225;
+  --text-primary: #dcddde;
+  --text-secondary: #b9bbbe;
+  --text-muted: #72767d;
+  --custom-background: none;
+  --background-blur: 5px;
+  --background-opacity: 0.85;
+  --primary-font: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: "Consolas", "Monaco", monospace;
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --server-size: 48px;
+  --avatar-size-small: 32px;
+  --avatar-size-medium: 40px;
+  --avatar-size-large: 80px;
+  --border-radius: 8px;
+  --border-radius-small: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --shadow-elevation-low: 0 1px 5px rgba(0, 0, 0, 0.2);
+  --shadow-elevation-medium: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-elevation-high: 0 8px 16px rgba(0, 0, 0, 0.4);
+  --transition-speed: 0.2s;
+}
+
+/* #endregion Variables */
+/**
+ * Fonts Module
+ * Handles typography and font styling
+ */
+body,
+.appMount-2yBXZl {
+  font-family: var(--primary-font);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-31SJ6t,
+.header-3OsQeK {
+  font-weight: var(--font-weight-bold);
+}
+
+code,
+.inline {
+  font-family: var(--code-font);
+  font-size: calc(var(--font-size-base) * 0.875);
+}
+
+.hljs,
+pre code {
+  font-family: var(--code-font);
+}
+
+.markup-eYLPri {
+  font-size: var(--font-size-base);
+  line-height: 1.375;
+}
+
+.username-h_Y3Us {
+  font-weight: var(--font-weight-bold);
+}
+
+.timestamp-p1Df1m {
+  font-size: calc(var(--font-size-base) * 0.75);
+}
+
+.name-28HaxV {
+  font-weight: var(--font-weight-bold);
+}
+
+::placeholder {
+  font-family: var(--primary-font);
+  opacity: 0.6;
+}
+
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* #region Colors */
+/**
+ * Colors Module
+ * Handles all color-related styling for Discord elements
+ */
+.theme-dark {
+  --background-primary: var(--background-primary);
+  --background-secondary: var(--background-secondary);
+  --background-tertiary: var(--background-tertiary);
+  --background-accent: var(--accent-color);
+}
+
+.theme-dark {
+  --text-normal: var(--text-primary);
+  --text-muted: var(--text-muted);
+  --text-link: var(--primary-color);
+  --header-primary: var(--text-primary);
+  --header-secondary: var(--text-secondary);
+}
+
+.theme-dark {
+  --interactive-normal: var(--text-secondary);
+  --interactive-hover: var(--text-primary);
+  --interactive-active: var(--text-primary);
+  --interactive-muted: var(--text-muted);
+}
+
+.button-f2h6uQ.lookFilled-yCfaCM.colorPrimary-2-Lusz {
+  background-color: var(--primary-color);
+}
+.button-f2h6uQ.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+  background-color: var(--secondary-color);
+}
+.button-f2h6uQ.lookFilled-yCfaCM.colorRed-rQXKgM {
+  background-color: var(--accent-color);
+}
+
+.theme-dark {
+  --status-positive: var(--secondary-color);
+  --status-warning: #faa61a;
+  --status-danger: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-tertiary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted);
+}
+
+.mention {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color);
+}
+.mention:hover {
+  background-color: rgba(var(--primary-color-rgb), 0.2);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+/* #endregion Colors */
+/**
+ * Backgrounds Module
+ * Handles background styling and effects
+ */
+.bg-h5JY_x,
+.appMount-2yBXZl {
+  background-color: var(--background-primary);
+}
+
+.layer-86YKbF {
+  background-color: var(--background-primary);
+}
+
+.sidebar-1tnWFu {
+  background-color: var(--background-secondary);
+}
+
+.guilds-2JjMmN {
+  background-color: var(--background-tertiary);
+}
+
+.chat-2ZfjoI {
+  background-color: var(--background-primary);
+}
+
+.members-3WRCEx {
+  background-color: var(--background-secondary);
+}
+
+.modal-3Crloo {
+  background-color: var(--background-primary);
+}
+
+.card-2TzCfp {
+  background-color: var(--background-secondary);
+}
+.card-2TzCfp:hover {
+  background-color: var(--background-tertiary);
+}
+
+.popout-TdhJ6Z {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.searchResultsWrap-5RVOkx {
+  background-color: var(--background-primary);
+}
+
+.embed-hKpSrO {
+  background-color: var(--background-secondary);
+  border-left: 4px solid var(--primary-color);
+}
+
+.hljs {
+  background-color: var(--background-tertiary) !important;
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-small);
+}
+
+.spoilerText-27bIiA {
+  background-color: var(--background-tertiary);
+}
+.spoilerText-27bIiA.hidden-3B-Rum:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.autocomplete-3NRXG8 {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.menu-1QYKjX {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-high);
+}
+
+/**
+ * Discord Base Module
+ * General Discord App styling
+ * (Window Bar, Scrollbars, Dividers, Settings, Shop, Quests etc.)
+ */
+.appMount-2yBXZl {
+  display: flex;
+}
+
+.baseLayer-W6S8cY {
+  position: relative;
+}
+
+.container-2cd8Mz {
+  display: flex;
+  height: 100vh;
+}
+
+.base-2jDfDU {
+  position: relative;
+  display: flex;
+  border-radius: 0;
+}
+
+.scroller-3X7KbA::-webkit-scrollbar,
+.scrollerBase-_bVAAt::-webkit-scrollbar {
+  width: 12px;
+}
+.scroller-3X7KbA::-webkit-scrollbar-track,
+.scrollerBase-_bVAAt::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroller-3X7KbA::-webkit-scrollbar-thumb,
+.scrollerBase-_bVAAt::-webkit-scrollbar-thumb {
+  background-color: var(--background-tertiary);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.scroller-3X7KbA::-webkit-scrollbar-thumb:hover,
+.scrollerBase-_bVAAt::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted);
+}
+
+.divider-IqmEqJ {
+  height: 1px;
+  background-color: var(--background-tertiary);
+  border: none;
+}
+
+.tooltip-14MtrL {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-elevation-medium);
+}
+.tooltip-14MtrL .tooltipPointer-sMBQqe {
+  border-top-color: var(--background-tertiary);
+}
+
+.textBadge-1tJ5Ps,
+.base-1pYU8j {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.statusItem-2hiCNB[style*="background-color: hsl(139"] {
+  background-color: var(--secondary-color) !important;
+}
+.statusItem-2hiCNB[style*="background-color: hsl(38"] {
+  background-color: #faa61a !important;
+}
+.statusItem-2hiCNB[style*="background-color: hsl(359"] {
+  background-color: var(--accent-color) !important;
+}
+
+.spinner-2RT1ol .spinnerItem-3GzSlQ {
+  background-color: var(--primary-color);
+}
+
+.search-39IXmY .searchBar-jGtisZ {
+  background-color: var(--background-tertiary);
+}
+.search-39IXmY .searchBar-jGtisZ:focus-within {
+  background-color: var(--background-secondary);
+}
+
+.topPill-3DJJNV .item-3XjbnG {
+  color: var(--text-muted);
+}
+.topPill-3DJJNV .item-3XjbnG.selected-g-kMVV {
+  color: var(--text-primary);
+  background-color: var(--background-tertiary);
+}
+
+.notice-2HEN-u {
+  background-color: var(--primary-color);
+}
+.notice-2HEN-u.noticeInfo-3_iTE1 {
+  background-color: var(--primary-color);
+}
+.notice-2HEN-u.noticeSuccess-1krf0w {
+  background-color: var(--secondary-color);
+}
+.notice-2HEN-u.noticeDanger-1y0VfW {
+  background-color: var(--accent-color);
+}
+
+/**
+ * Discord Sidebar Module
+ * Styling for server list and channel sidebar
+ */
+.guilds-2JjMmN .scroller-3X7KbA {
+  padding: var(--spacing-small) 0;
+}
+
+.listItem-3SmSlK .wrapper-3kah-n {
+  transition: all var(--transition-speed) ease;
+}
+.listItem-3SmSlK .wrapper-3kah-n:hover {
+  border-radius: calc(var(--border-radius) * 0.6);
+  transform: translateY(-2px);
+}
+.listItem-3SmSlK .pill-2RsI5Q .item-2LIpTv {
+  background-color: var(--text-primary);
+}
+
+.homeIcon-r0w4ny path {
+  fill: var(--text-primary);
+}
+
+.sidebar-1tnWFu .container-3XgAHv {
+  background-color: var(--background-secondary);
+}
+
+.content-1gYQeQ .containerDefault-YUSmu3:hover {
+  background-color: var(--background-tertiary);
+}
+.content-1gYQeQ .modeSelected-3DmyhH {
+  background-color: var(--background-tertiary);
+}
+.content-1gYQeQ .modeSelected-3DmyhH .name-28HaxV {
+  color: var(--text-primary);
+}
+
+.name-28HaxV {
+  color: var(--text-secondary);
+}
+
+.icon-2W8DHg {
+  color: var(--text-muted);
+}
+
+.wrapper-3Hk9OB:hover {
+  background-color: var(--background-tertiary);
+}
+.wrapper-3Hk9OB.selected-1-Z6gm {
+  background-color: var(--background-tertiary);
+}
+
+.containerDefault-3TQ5YN {
+  color: var(--text-muted);
+}
+.containerDefault-3TQ5YN:hover {
+  color: var(--text-secondary);
+}
+
+.panels-3wFtMD {
+  background-color: var(--background-secondary);
+}
+.panels-3wFtMD .container-YkUktl {
+  background-color: var(--background-tertiary);
+}
+
+.avatarWrapper-1B9FTW .avatar-6qzftW {
+  border-radius: 50%;
+}
+
+.menu-1QYKjX .item-1OdjEX:hover {
+  background-color: var(--background-tertiary);
+}
+.menu-1QYKjX .colorDefault-CDqZdO:active {
+  background-color: var(--primary-color);
+}
+
+.button-1EGGcP {
+  color: var(--text-primary);
+}
+.button-1EGGcP:hover {
+  background-color: var(--background-tertiary);
+}
+
+.wrapper-38slSD .folder-241Joy {
+  background-color: var(--background-secondary);
+}
+.wrapper-38slSD .folder-241Joy:hover {
+  background-color: var(--background-tertiary);
+}
+.wrapper-38slSD.collapsed-1GMuSb .folder-241Joy {
+  border-radius: var(--border-radius);
+}
+
+.numberBadge-37OJ3S {
+  background-color: var(--accent-color) !important;
+  color: white;
+}
+
+.mentionsBadge-7Be-gR {
+  background-color: var(--accent-color) !important;
+}
+
+.tierMarkerBackground-G8FoN2 {
+  background: var(--primary-color);
+}
+
+.searchBar-2aylmZ {
+  background-color: var(--background-tertiary);
+}
+
+/* #region D-channels */
+/**
+ * Channels Module
+ * Styling for server channels and related components
+ */
+.channels-3bXkXc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+}
+
+/* #endregion D-channels */
+/* #region D-userarea */
+/**
+ * Userarea Module
+ * Styling for bottom left user area box
+ */
+.userArea-3bXkXc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+}
+
+/* #endregion D-userarea */
+/**
+ * Discord Chat Module
+ * Styling for chat messages, input, and related elements
+ */
+.chat-2ZfjoI .content-1SgpWY {
+  background-color: var(--background-primary);
+}
+
+.message-2CShn3:hover {
+  background-color: var(--background-secondary);
+}
+.message-2CShn3.mentioned-Tre-dv {
+  background-color: rgba(250, 166, 26, 0.05);
+  border-left: 2px solid #faa61a;
+}
+.message-2CShn3.mentioned-Tre-dv:hover {
+  background-color: rgba(250, 166, 26, 0.08);
+}
+
+.markup-eYLPri {
+  color: var(--text-primary);
+}
+.markup-eYLPri code {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--background-tertiary);
+}
+
+.username-h_Y3Us {
+  color: var(--text-primary);
+}
+.username-h_Y3Us:hover {
+  text-decoration: underline;
+}
+
+.timestamp-p1Df1m {
+  color: var(--text-muted);
+}
+
+.header-2jRmjb {
+  margin-bottom: 2px;
+}
+
+.reaction-3vwAF2 {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+}
+.reaction-3vwAF2:hover {
+  background-color: var(--background-tertiary);
+  border-color: var(--text-muted);
+}
+.reaction-3vwAF2.reactionMe-1PwQAc {
+  background-color: rgba(var(--primary-color-rgb), 0.15);
+  border-color: var(--primary-color);
+}
+
+.embed-hKpSrO .embedAuthor-3l5luH,
+.embed-hKpSrO .embedTitle-2n1pEb,
+.embed-hKpSrO .embedDescription-1Cuq9a,
+.embed-hKpSrO .embedFields-2IPs5Z {
+  color: var(--text-primary);
+}
+.embed-hKpSrO .embedFooter-1eqGbu {
+  color: var(--text-muted);
+}
+
+.attachment-1PZZB2 {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+}
+
+.form-3gdLxP .channelTextArea-1VQBuV {
+  background-color: var(--background-tertiary);
+}
+.form-3gdLxP .channelTextArea-1VQBuV .placeholder-1rCBhr {
+  color: var(--text-muted);
+}
+.form-3gdLxP .channelTextArea-1VQBuV .slateTextArea-27tjG0 {
+  color: var(--text-primary);
+}
+
+.buttons-uaqb-5 .button-3bklZh {
+  color: var(--text-muted);
+}
+.buttons-uaqb-5 .button-3bklZh:hover {
+  color: var(--text-primary);
+}
+
+.uploadModal-2ifh8j {
+  background-color: var(--background-primary);
+}
+.uploadModal-2ifh8j .inner-rBP-MS {
+  background-color: var(--background-secondary);
+  border: 2px dashed var(--background-tertiary);
+}
+
+.container-3wLKDe {
+  background-color: var(--background-secondary);
+}
+.container-3wLKDe .spine-29OFwR {
+  background-color: var(--background-tertiary);
+}
+
+.typing-3eiiL_ .text-1DUST5 {
+  color: var(--text-muted);
+}
+
+.jumpToPresentBar-1cEnH0 {
+  background-color: var(--primary-color);
+  color: white;
+}
+.jumpToPresentBar-1cEnH0:hover {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.divider-2rZoKK.isUnread-3Lojb- {
+  border-color: var(--accent-color);
+}
+.divider-2rZoKK.isUnread-3Lojb- .content-3spvdd {
+  color: var(--accent-color);
+}
+.divider-2rZoKK.isUnread-3Lojb- .unreadPill-3nEWYM {
+  background-color: var(--accent-color);
+}
+
+.repliedMessage-3Z6XBG::before {
+  border-color: var(--background-tertiary);
+}
+.repliedMessage-3Z6XBG .username-h_Y3Us {
+  opacity: 0.6;
+}
+
+.systemMessage-1H1Z20 .content-1Wn3gB {
+  color: var(--text-muted);
+}
+
+.messagesPopoutWrap-3zryHW {
+  background-color: var(--background-primary);
+}
+.messagesPopoutWrap-3zryHW .messageGroupWrapper-1jf_7C {
+  background-color: var(--background-secondary);
+}
+.messagesPopoutWrap-3zryHW .messageGroupWrapper-1jf_7C:hover {
+  background-color: var(--background-tertiary);
+}
+
+.autocomplete-3NRXG8 .selectorSelected-2M0IGv {
+  background-color: var(--background-tertiary);
+}
+.autocomplete-3NRXG8 .selector-nbyEfM:hover {
+  background-color: var(--background-tertiary);
+}
+
+/**
+ * Discord Members Module
+ * Styling for member list and user profiles
+ */
+.members-3WRCEx .membersWrap-3NUR2t {
+  min-width: 240px;
+}
+
+.member-2gU6Ar {
+  padding: var(--spacing-small);
+  margin: 2px var(--spacing-small);
+  border-radius: var(--border-radius);
+}
+.member-2gU6Ar:hover {
+  background-color: var(--background-tertiary);
+}
+
+.roleColor-nA7BqX {
+  color: var(--text-primary);
+}
+
+.nameTag-sc-gpq .username {
+  color: var(--text-primary);
+}
+.nameTag-sc-gpq .discriminator-WV5K5s {
+  color: var(--text-muted);
+}
+
+.membersGroup-2eiWxl {
+  color: var(--text-muted);
+  font-weight: var(--font-weight-bold);
+}
+
+.activityText-1rR-8O {
+  color: var(--text-secondary);
+}
+
+.activity-2EQDZv .nameNormal-3ljeXm {
+  color: var(--text-primary);
+}
+.activity-2EQDZv .details-EvgR0c,
+.activity-2EQDZv .state-1PQrkn {
+  color: var(--text-secondary);
+}
+
+.userPopout-2j1gM4 {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-high);
+}
+.userPopout-2j1gM4 .body-1Ukv50 {
+  background-color: var(--background-secondary);
+}
+.userPopout-2j1gM4 .footer-3naVBw {
+  background-color: var(--background-tertiary);
+}
+
+.root-8LYsGj .topSection-13QKHs {
+  background-color: var(--background-primary);
+}
+.root-8LYsGj .body-16rSsp {
+  background-color: var(--background-primary);
+}
+
+.banner-1YaD3N {
+  background-color: var(--primary-color);
+}
+
+.tabBarItem-3dfX8P {
+  color: var(--text-muted);
+}
+.tabBarItem-3dfX8P.selected-1JLFLy {
+  color: var(--text-primary);
+  border-bottom-color: var(--primary-color);
+}
+.tabBarItem-3dfX8P:hover:not(.selected-1JLFLy) {
+  color: var(--text-secondary);
+}
+
+.markup-eYLPri .title-3hptVQ {
+  color: var(--text-primary);
+}
+
+.role-2TIOKu {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--background-tertiary);
+}
+.role-2TIOKu .roleCircle-1EgnSL {
+  flex-shrink: 0;
+}
+
+.textarea-2Oqzxw {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+}
+.textarea-2Oqzxw:focus {
+  background-color: var(--background-secondary);
+}
+
+.membersGroup-2eiWxl {
+  padding: var(--spacing-small);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.avatar-6qzftW {
+  position: relative;
+}
+
+.pointerEvents-9SZWKj rect[mask="url(#svg-mask-status-online)"],
+.pointerEvents-9SZWKj rect[mask="url(#svg-mask-status-idle)"],
+.pointerEvents-9SZWKj rect[mask="url(#svg-mask-status-dnd)"] {
+  fill: currentColor;
+}
+
+.customStatus-3XAoF9 .emoji {
+  width: 16px;
+  height: 16px;
+}
+
+.profileBadges-2pItdR .profileBadge-2BqF-Z {
+  width: 22px;
+  height: 22px;
+}
+
+.connectedAccount-2PrNaX {
+  border: 1px solid var(--background-tertiary);
+  background-color: var(--background-secondary);
+}
+.connectedAccount-2PrNaX:hover {
+  background-color: var(--background-tertiary);
+}
+
+/**
+ * Discord Modals Module
+ * Styling for modals, popups, and overlays
+ */
+.layer-86YKbF {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-3Nnq9B {
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.modal-3Crloo {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.header-3xB4vB {
+  background-color: var(--background-primary);
+  box-shadow: none;
+  padding: var(--spacing-large);
+}
+
+.footer-31IekZ {
+  background-color: var(--background-secondary);
+  padding: var(--spacing-medium);
+  box-shadow: none;
+}
+
+.closeButton-PCZcma {
+  color: var(--text-muted);
+}
+.closeButton-PCZcma:hover {
+  color: var(--text-primary);
+}
+
+.contentRegion-3HkfJJ {
+  background-color: var(--background-primary);
+}
+.contentRegion-3HkfJJ .contentRegionScroller-2_GT_N {
+  background-color: var(--background-primary);
+}
+
+.sidebarRegion-1VBisG {
+  background-color: var(--background-secondary);
+}
+
+.side-2ur1Qk .item-3XjbnG {
+  color: var(--text-muted);
+  padding: var(--spacing-small) var(--spacing-medium);
+  margin-bottom: 2px;
+  border-radius: var(--border-radius);
+}
+.side-2ur1Qk .item-3XjbnG:hover {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+}
+.side-2ur1Qk .item-3XjbnG.selected-g-kMVV {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+}
+
+.input-2g-os5 {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--background-tertiary);
+  color: var(--text-primary);
+}
+.input-2g-os5:hover {
+  border-color: var(--text-muted);
+}
+.input-2g-os5:focus {
+  border-color: var(--primary-color);
+}
+
+.select-1Ia3dD .control-1fl03x {
+  background-color: var(--background-tertiary);
+  border-color: var(--background-tertiary);
+}
+.select-1Ia3dD .control-1fl03x:hover {
+  border-color: var(--text-muted);
+}
+.select-1Ia3dD .menu-1QYKjX {
+  background-color: var(--background-secondary);
+}
+.select-1Ia3dD .option-1QI4c9:hover {
+  background-color: var(--background-tertiary);
+}
+.select-1Ia3dD .option-1QI4c9.focused-3qFvc8 {
+  background-color: var(--background-tertiary);
+}
+
+.checkbox-1QwaS4 .checkboxInner-1xEUCY {
+  border-color: var(--text-muted);
+}
+.checkbox-1QwaS4 .checkboxInner-1xEUCY.checked-2GNvPF {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.switch-3lyafC .slider-3BbE4f {
+  background-color: var(--background-tertiary);
+}
+.switch-3lyafC.checked-25WXMf .slider-3BbE4f {
+  background-color: var(--primary-color);
+}
+
+.radioBar-3w9XY- {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+}
+.radioBar-3w9XY-:hover {
+  border-color: var(--text-muted);
+}
+.radioBar-3w9XY-.selected-1JjBPm {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.menu-1QYKjX .item-1OdjEX {
+  color: var(--text-primary);
+}
+.menu-1QYKjX .item-1OdjEX:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.menu-1QYKjX .item-1OdjEX.colorDanger-3n-WE- {
+  color: var(--accent-color);
+}
+.menu-1QYKjX .item-1OdjEX.colorDanger-3n-WE-:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+.menu-1QYKjX .separator-1So4YB {
+  background-color: var(--background-tertiary);
+}
+
+.modal-1Kmy_E .image-1SFeg5 {
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.quickswitcher-pKcM9U {
+  background-color: var(--background-primary);
+}
+.quickswitcher-pKcM9U .input-3r5zZY {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+}
+.quickswitcher-pKcM9U .result-u66Ywh:hover, .quickswitcher-pKcM9U .result-u66Ywh.selected-1sf9UK {
+  background-color: var(--background-secondary);
+}
+
+.userSettingsVoice-2hc46z .previewOverlay-2O7_KC {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.confirmationModal-1g7DzH .content-2hZxGK {
+  color: var(--text-primary);
+}
+
+/* #region D-betterdiscord */
+/**
+ * BetterDiscord Module
+ * Styling for BetterDiscord specific components
+ * (Settings, Stores, Alerts, etc.)
+ */
+.userArea-3bXkXc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+}
+
+/* #endregion D-betterdiscord */
+/* #region Plugins */
+/**
+ * Plugins Module
+ * Styles for various plugins to ensure compatibility with custom theme
+ */
+/* #region Example Plugin */
+.plugin-example {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+.plugin-example .plugin-header {
+  font-size: 1.2em;
+  font-weight: var(--font-weight-bold);
+  border-bottom: 2px solid var(--primary-color);
+}
+.plugin-example .plugin-content {
+  padding: var(--spacing-medium);
+}
+.plugin-example .plugin-content a {
+  color: var(--text-link);
+}
+.plugin-example .plugin-content a:hover {
+  text-decoration: underline;
+}
+
+/* #endregion Example Plugin */
+/* #endregion Plugins */

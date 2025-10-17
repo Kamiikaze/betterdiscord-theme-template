@@ -1,0 +1,220 @@
+/**
+ * Discord Modals Module
+ * Styling for modals, popups, and overlays
+ */
+
+// Modal backdrop
+.layer-86YKbF {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+// Modal container
+.modal-3Nnq9B {
+  box-shadow: var(--shadow-elevation-high);
+}
+
+// Modal content
+.modal-3Crloo {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+// Modal header
+.header-3xB4vB {
+  background-color: var(--background-primary);
+  box-shadow: none;
+  padding: var(--spacing-large);
+}
+
+// Modal footer
+.footer-31IekZ {
+  background-color: var(--background-secondary);
+  padding: var(--spacing-medium);
+  box-shadow: none;
+}
+
+// Close button
+.closeButton-PCZcma {
+  color: var(--text-muted);
+
+  &:hover {
+    color: var(--text-primary);
+  }
+}
+
+// Settings modal
+.contentRegion-3HkfJJ {
+  background-color: var(--background-primary);
+
+  .contentRegionScroller-2_GT_N {
+    background-color: var(--background-primary);
+  }
+}
+
+.sidebarRegion-1VBisG {
+  background-color: var(--background-secondary);
+}
+
+// Settings sidebar
+.side-2ur1Qk {
+  .item-3XjbnG {
+    color: var(--text-muted);
+    padding: var(--spacing-small) var(--spacing-medium);
+    margin-bottom: 2px;
+    border-radius: var(--border-radius);
+
+    &:hover {
+      background-color: var(--background-tertiary);
+      color: var(--text-primary);
+    }
+
+    &.selected-g-kMVV {
+      background-color: var(--background-tertiary);
+      color: var(--text-primary);
+    }
+  }
+}
+
+// Form elements in modals
+.input-2g-os5 {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--background-tertiary);
+  color: var(--text-primary);
+
+  &:hover {
+    border-color: var(--text-muted);
+  }
+
+  &:focus {
+    border-color: var(--primary-color);
+  }
+}
+
+// Select/dropdown
+.select-1Ia3dD {
+  .control-1fl03x {
+    background-color: var(--background-tertiary);
+    border-color: var(--background-tertiary);
+
+    &:hover {
+      border-color: var(--text-muted);
+    }
+  }
+
+  .menu-1QYKjX {
+    background-color: var(--background-secondary);
+  }
+
+  .option-1QI4c9 {
+    &:hover {
+      background-color: var(--background-tertiary);
+    }
+
+    &.focused-3qFvc8 {
+      background-color: var(--background-tertiary);
+    }
+  }
+}
+
+// Checkbox
+.checkbox-1QwaS4 {
+  .checkboxInner-1xEUCY {
+    border-color: var(--text-muted);
+
+    &.checked-2GNvPF {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+  }
+}
+
+// Switch/toggle
+.switch-3lyafC {
+  .slider-3BbE4f {
+    background-color: var(--background-tertiary);
+  }
+
+  &.checked-25WXMf {
+    .slider-3BbE4f {
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+// Radio button
+.radioBar-3w9XY- {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+
+  &:hover {
+    border-color: var(--text-muted);
+  }
+
+  &.selected-1JjBPm {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
+// Context menu
+.menu-1QYKjX {
+  .item-1OdjEX {
+    color: var(--text-primary);
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    &.colorDanger-3n-WE- {
+      color: var(--accent-color);
+
+      &:hover {
+        background-color: var(--accent-color);
+        color: white;
+      }
+    }
+  }
+
+  .separator-1So4YB {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Image modal
+.modal-1Kmy_E {
+  .image-1SFeg5 {
+    box-shadow: var(--shadow-elevation-high);
+  }
+}
+
+// Quick switcher
+.quickswitcher-pKcM9U {
+  background-color: var(--background-primary);
+
+  .input-3r5zZY {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+  }
+
+  .result-u66Ywh {
+    &:hover,
+    &.selected-1sf9UK {
+      background-color: var(--background-secondary);
+    }
+  }
+}
+
+// User settings
+.userSettingsVoice-2hc46z {
+  .previewOverlay-2O7_KC {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+// Confirmation modal
+.confirmationModal-1g7DzH {
+  .content-2hZxGK {
+    color: var(--text-primary);
+  }
+}

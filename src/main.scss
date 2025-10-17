@@ -1,0 +1,19 @@
+//
+// Main compiled theme file
+// This file imports all modules and gets compiled into a single CSS file
+//
+// Import all module partials using modern @use syntax
+//
+@use "modules/variables";
+@use "modules/fonts";
+@use "modules/colors";
+@use "modules/backgrounds";
+@use "modules/discord-base";
+@use "modules/discord-sidebar";
+@use "modules/discord-channels";
+@use "modules/discord-userarea";
+@use "modules/discord-chat";
+@use "modules/discord-members";
+@use "modules/discord-modals";
+@use "modules/betterdiscord";
+@use "modules/plugins";

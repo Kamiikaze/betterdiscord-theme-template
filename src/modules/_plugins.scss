@@ -1,0 +1,32 @@
+/* #region Plugins */
+/**
+ * Plugins Module
+ * Styles for various plugins to ensure compatibility with custom theme
+ */
+
+/* #region Example Plugin */
+.plugin-example {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+
+  .plugin-header {
+    font-size: 1.2em;
+    font-weight: var(--font-weight-bold);
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .plugin-content {
+    padding: var(--spacing-medium);
+
+    a {
+      color: var(--text-link);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+/* #endregion Example Plugin */
+
+/* #endregion Plugins */

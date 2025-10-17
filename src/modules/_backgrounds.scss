@@ -1,0 +1,96 @@
+/**
+ * Backgrounds Module
+ * Handles background styling and effects
+ */
+
+// Main background containers
+.bg-h5JY_x,
+.appMount-2yBXZl {
+  background-color: var(--background-primary);
+}
+
+// Layer backgrounds
+.layer-86YKbF {
+  background-color: var(--background-primary);
+}
+
+// Sidebar backgrounds
+.sidebar-1tnWFu {
+  background-color: var(--background-secondary);
+}
+
+// Server list
+.guilds-2JjMmN {
+  background-color: var(--background-tertiary);
+}
+
+// Chat area
+.chat-2ZfjoI {
+  background-color: var(--background-primary);
+}
+
+// Member list
+.members-3WRCEx {
+  background-color: var(--background-secondary);
+}
+
+// Modals
+.modal-3Crloo {
+  background-color: var(--background-primary);
+}
+
+// Cards
+.card-2TzCfp {
+  background-color: var(--background-secondary);
+
+  &:hover {
+    background-color: var(--background-tertiary);
+  }
+}
+
+// Popouts
+.popout-TdhJ6Z {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-high);
+}
+
+// Search results
+.searchResultsWrap-5RVOkx {
+  background-color: var(--background-primary);
+}
+
+// Embed backgrounds
+.embed-hKpSrO {
+  background-color: var(--background-secondary);
+  border-left: 4px solid var(--primary-color);
+}
+
+// Code block backgrounds
+.hljs {
+  background-color: var(--background-tertiary) !important;
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-small);
+}
+
+// Spoiler backgrounds
+.spoilerText-27bIiA {
+  background-color: var(--background-tertiary);
+
+  &.hidden-3B-Rum {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+// Auto-complete
+.autocomplete-3NRXG8 {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+// Context menus
+.menu-1QYKjX {
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow-elevation-high);
+}
