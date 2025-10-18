@@ -1,7 +1,4 @@
 export default {
-  // Plugins
-  plugins: ['prettier-plugin-organize-imports'],
-
   // Line Length
   printWidth: 100,
 
