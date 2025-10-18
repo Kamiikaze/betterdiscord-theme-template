@@ -1,4 +1,7 @@
-export default{
+export default {
+  // Plugins
+  plugins: ['prettier-plugin-organize-imports'],
+
   // Line Length
   printWidth: 100,
 
@@ -8,10 +11,10 @@ export default{
 
   // Quotes
   singleQuote: true,
-  quoteProps: "as-needed",
+  quoteProps: 'as-needed',
 
   // Trailing Commas
-  trailingComma: "es5",
+  trailingComma: 'es5',
 
   // Semicolons
   semi: true,
@@ -21,18 +24,18 @@ export default{
   bracketSameLine: false,
 
   // Arrow Functions
-  arrowParens: "always",
+  arrowParens: 'always',
 
   // Line Endings
-  endOfLine: "lf",
+  endOfLine: 'lf',
 
   // Other
-  proseWrap: "preserve",
+  proseWrap: 'preserve',
 
   // SCSS/CSS Specific
   overrides: [
     {
-      files: ["*.scss", "*.css"],
+      files: ['*.scss', '*.css'],
       options: {
         singleQuote: false, // Use double quotes in SCSS/CSS
         printWidth: 100,

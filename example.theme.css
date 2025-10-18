@@ -28,14 +28,14 @@
   --text-muted: #72767d;
 
   /* ============ Backgrounds ============ */
-  --custom-background: url('https://i.imgur.com/your-image.jpg');
+  --custom-background: url("https://i.imgur.com/your-image.jpg");
   --background-blur: 5px;
   --background-opacity: 0.85;
   --use-custom-background: 0; /* Set to 1 to enable custom background */
 
   /* ============ Fonts ============ */
-  --primary-font: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --code-font: 'Consolas', 'Monaco', monospace;
+  --primary-font: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: "Consolas", "Monaco", monospace;
   --font-size-base: 16px;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
@@ -63,7 +63,7 @@
    Do not modify below this line
    ========================================== */
 
-@import url('https://yourdomain.com/path/to/compiled-theme.css');
+@import url("https://yourdomain.com/path/to/compiled-theme.css");
 
 /* ==========================================
    CUSTOM BACKGROUND (if enabled)
@@ -77,7 +77,7 @@
 
 .bg-h5JY_x::before,
 .appMount-2yBXZl::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;

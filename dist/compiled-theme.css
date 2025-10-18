@@ -37,6 +37,7 @@
 }
 
 /* #endregion Variables */
+/* #region Fonts */
 /**
  * Fonts Module
  * Handles typography and font styling
@@ -103,6 +104,7 @@ b {
   text-rendering: optimizeLegibility;
 }
 
+/* #endregion Fonts */
 /* #region Colors */
 /**
  * Colors Module
@@ -167,6 +169,7 @@ b {
 }
 
 /* #endregion Colors */
+/* #region Backgrounds */
 /**
  * Backgrounds Module
  * Handles background styling and effects
@@ -244,6 +247,8 @@ b {
   box-shadow: var(--shadow-elevation-high);
 }
 
+/* #endregion Backgrounds */
+/* #region D-Base */
 /**
  * Discord Base Module
  * General Discord App styling
@@ -351,6 +356,8 @@ b {
   background-color: var(--accent-color);
 }
 
+/* #endregion D-Base */
+/* #region D-Sidebar */
 /**
  * Discord Sidebar Module
  * Styling for server list and channel sidebar
@@ -462,7 +469,8 @@ b {
   background-color: var(--background-tertiary);
 }
 
-/* #region D-channels */
+/* #endregion D-Sidebar */
+/* #region D-Channels */
 /**
  * Channels Module
  * Styling for server channels and related components
@@ -474,8 +482,8 @@ b {
   background-color: var(--background-primary);
 }
 
-/* #endregion D-channels */
-/* #region D-userarea */
+/* #endregion D-Channels */
+/* #region D-UserArea */
 /**
  * Userarea Module
  * Styling for bottom left user area box
@@ -487,7 +495,8 @@ b {
   background-color: var(--background-primary);
 }
 
-/* #endregion D-userarea */
+/* #endregion D-UserArea */
+/* #region D-Chat */
 /**
  * Discord Chat Module
  * Styling for chat messages, input, and related elements
@@ -641,6 +650,8 @@ b {
   background-color: var(--background-tertiary);
 }
 
+/* #endregion D-Chat */
+/* #region D-Members */
 /**
  * Discord Members Module
  * Styling for member list and user profiles
@@ -773,6 +784,8 @@ b {
   background-color: var(--background-tertiary);
 }
 
+/* #endregion D-Members */
+/* #region D-Modals */
 /**
  * Discord Modals Module
  * Styling for modals, popups, and overlays
@@ -932,7 +945,8 @@ b {
   color: var(--text-primary);
 }
 
-/* #region D-betterdiscord */
+/* #endregion D-Modals */
+/* #region BetterDiscord */
 /**
  * BetterDiscord Module
  * Styling for BetterDiscord specific components
@@ -945,7 +959,7 @@ b {
   background-color: var(--background-primary);
 }
 
-/* #endregion D-betterdiscord */
+/* #endregion BetterDiscord */
 /* #region Plugins */
 /**
  * Plugins Module

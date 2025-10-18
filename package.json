@@ -1,6 +1,6 @@
 {
   "name": "betterdiscord-custom-theme-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A customizable BetterDiscord theme template built with SCSS",
   "author": "Kamiikaze",
   "license": "MIT",
@@ -14,26 +14,26 @@
   "scripts": {
     "watch": "sass src/main.scss dist/compiled-theme.css --watch --style expanded --no-source-map",
     "watch:local": "npm run build:local && node src/local-watch.js",
-
     "build": "npm run build:exp && npm run build:min",
     "build:exp": "sass src/main.scss dist/compiled-theme.css --style expanded --no-source-map",
     "build:min": "sass src/main.scss dist/compiled-theme.min.css --style compressed --no-source-map",
     "build:local": "npm run build:exp && node src/local-build.js",
-
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
-    
     "format": "prettier --write \"src/**/*.{js,scss}\"",
     "format:check": "prettier --check \"src/**/*.{js,scss}\""
   },
   "devDependencies": {
     "@eslint/js": "9.38.0",
     "chokidar": "3.5.3",
+    "dotenv": "^17.2.3",
     "eslint": "9.38.0",
     "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-import": "^2.32.0",
     "husky": "9.1.7",
     "lint-staged": "16.2.4",
     "prettier": "3.6.2",
+    "prettier-plugin-organize-imports": "^4.3.0",
     "sass": "1.69.5"
   },
   "lint-staged": {
