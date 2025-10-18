@@ -4,10 +4,12 @@
  */
 
 import { spawn } from 'child_process';
-import chokidar from 'chokidar';
 import { homedir } from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
+import chokidar from 'chokidar';
+
 import { FILE_NAMES } from './config.js';
 import { buildLocal, copyThemeToBetterDiscord } from './utils/buildLocal.js';
 

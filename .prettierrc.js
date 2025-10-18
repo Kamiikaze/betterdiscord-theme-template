@@ -27,7 +27,7 @@ export default {
   arrowParens: 'always',
 
   // Line Endings
-  endOfLine: 'lf',
+  endOfLine: 'crlf',
 
   // Other
   proseWrap: 'preserve',

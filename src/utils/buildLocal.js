@@ -1,5 +1,6 @@
 import { copyFileSync, readFileSync, statSync, writeFileSync } from 'fs';
 import path from 'path';
+
 import { ALLOW_THEME_COPY } from '../config.js';
 
 /**

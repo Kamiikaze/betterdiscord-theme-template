@@ -1,9 +1,19 @@
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
+import importPlugin from 'eslint-plugin-import';
+import prettierPlugin from 'eslint-plugin-prettier';
+import globals from 'globals';
 
 export default [
   // Base recommended config
   js.configs.recommended,
+
+  {
+    plugins: {
+      import: importPlugin,
+      prettier: prettierPlugin,
+    },
+  },
 
   // Global ignores
   {
@@ -16,8 +26,8 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
-      env: {
-        node: true,
+      globals: {
+        ...globals.node,
       },
     },
     rules: {
@@ -63,9 +73,12 @@ export default [
           'newlines-between': 'always', // Enforce newlines between groups
         },
       ],
+
+      // Prettier Integration
+      'prettier/prettier': 'warn', // Add Prettier rules
     },
   },
 
-  // Prettier config (disables conflicting rules)
+  // Prettier integration to avoid conflicts
   prettier,
 ];
