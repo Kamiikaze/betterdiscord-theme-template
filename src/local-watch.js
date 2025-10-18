@@ -4,29 +4,21 @@
  */
 
 import { spawn } from 'child_process';
-import { homedir } from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 import chokidar from 'chokidar';
 
 import { FILE_NAMES } from './config.js';
-import { buildLocal, copyThemeToBetterDiscord } from './utils/buildLocal.js';
+import { buildLocal } from './utils/buildLocal.js';
 
 console.log('🚀 Starting local development mode...\n');
 
 // File paths
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
-const betterDiscordThemesPath = path.join(
-  homedir(),
-  'AppData',
-  'Roaming',
-  'BetterDiscord',
-  'themes'
-);
-const compiledPath = path.join(rootDir, 'dist', FILE_NAMES.COMPILED_FILE);
 const templatePath = path.join(rootDir, FILE_NAMES.USER_FILE);
+const compiledPath = path.join(rootDir, 'dist', FILE_NAMES.COMPILED_FILE);
 const outputPath = path.join(rootDir, 'dist', FILE_NAMES.LOCAL_TEST_FILE);
 
 // Start Sass compiler in watch mode
@@ -63,12 +55,10 @@ watcher.on('change', (filepath) => {
   const filename = path.basename(filepath);
   console.log(`\n📝 Detected change in: ${filename}`);
   buildLocal(templatePath, compiledPath, outputPath, FILE_NAMES.LOCAL_TEST_FILE);
-  copyThemeToBetterDiscord(outputPath, betterDiscordThemesPath, FILE_NAMES.LOCAL_TEST_FILE);
 });
 
 watcher.on('ready', () => {
   buildLocal(templatePath, compiledPath, outputPath, FILE_NAMES.LOCAL_TEST_FILE);
-  copyThemeToBetterDiscord(outputPath, betterDiscordThemesPath, FILE_NAMES.LOCAL_TEST_FILE);
   console.log('👀 Watching for changes...');
   console.log('   - SCSS files (via Sass)');
   console.log(`   - ${FILE_NAMES.USER_FILE}`);

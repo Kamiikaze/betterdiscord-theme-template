@@ -1,7 +1,8 @@
 import { copyFileSync, readFileSync, statSync, writeFileSync } from 'fs';
+import { homedir } from 'os';
 import path from 'path';
 
-import { ALLOW_THEME_COPY } from '../config.js';
+import { ALLOW_THEME_COPY, FILE_NAMES } from '../config.js';
 
 /**
  * Builds the local test theme by combining the template and compiled CSS.
@@ -13,6 +14,13 @@ import { ALLOW_THEME_COPY } from '../config.js';
  */
 export function buildLocal(templatePath, compiledPath, outputPath, localTestFileName) {
   try {
+    const betterDiscordThemesPath = path.join(
+      homedir(),
+      'AppData',
+      'Roaming',
+      'BetterDiscord',
+      'themes'
+    );
     // Read template file
     let template = readFileSync(templatePath, 'utf8');
 
@@ -39,6 +47,10 @@ export function buildLocal(templatePath, compiledPath, outputPath, localTestFile
 
     const size = (statSync(outputPath).size / 1024).toFixed(2);
     console.log(`✅ Built ${localTestFileName} (${size} KB)`);
+
+    // Copy to BetterDiscord themes folder
+    if (ALLOW_THEME_COPY)
+      copyThemeToBetterDiscord(outputPath, betterDiscordThemesPath, FILE_NAMES.LOCAL_TEST_FILE);
   } catch (error) {
     console.error('❌ Error building local theme:', error.message);
   }
@@ -52,7 +64,6 @@ export function buildLocal(templatePath, compiledPath, outputPath, localTestFile
  * @param {string} localTestFileName - Name of the local test file.
  */
 export function copyThemeToBetterDiscord(outputPath, betterDiscordThemesPath, localTestFileName) {
-  if (!ALLOW_THEME_COPY) return;
   try {
     // Append the filename to the BetterDiscord themes path
     const destinationPath = path.join(betterDiscordThemesPath, localTestFileName);

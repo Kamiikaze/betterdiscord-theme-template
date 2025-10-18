@@ -13,8 +13,8 @@ import { buildLocal } from './utils/buildLocal.js';
 // File paths
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
-const compiledPath = path.join(rootDir, 'dist', FILE_NAMES.COMPILED_FILE);
 const templatePath = path.join(rootDir, FILE_NAMES.USER_FILE);
+const compiledPath = path.join(rootDir, 'dist', FILE_NAMES.COMPILED_FILE);
 const outputPath = path.join(rootDir, 'dist', FILE_NAMES.LOCAL_TEST_FILE);
 
 try {
