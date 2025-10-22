@@ -28,6 +28,8 @@ export default [
       sourceType: 'module',
       globals: {
         ...globals.node,
+        ...globals.browser,
+        ...globals.es6,
       },
     },
     rules: {

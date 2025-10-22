@@ -4,23 +4,13 @@
  * This allows testing without hosting the CSS file
  */
 
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-import { FILE_NAMES } from './config.js';
+import { FILE_NAMES, PATHS } from './config.js';
 import { buildLocal } from './utils/buildLocal.js';
-
-// File paths
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.join(__dirname, '..');
-const templatePath = path.join(rootDir, FILE_NAMES.USER_FILE);
-const compiledPath = path.join(rootDir, 'dist', FILE_NAMES.COMPILED_FILE);
-const outputPath = path.join(rootDir, 'dist', FILE_NAMES.LOCAL_TEST_FILE);
 
 try {
   console.log('🔨 Building local theme for testing...\n');
 
-  buildLocal(templatePath, compiledPath, outputPath, FILE_NAMES.LOCAL_TEST_FILE);
+  buildLocal(PATHS.TEMPLATE, PATHS.COMPILED, PATHS.OUTPUT, FILE_NAMES.LOCAL_TEST_FILE);
 
   console.log('\n✅ Build complete!');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
