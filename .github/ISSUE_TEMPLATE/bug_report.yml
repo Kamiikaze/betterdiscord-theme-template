@@ -1,4 +1,7 @@
-
+name: Bug Report
+description: Report a bug or issue with the theme
+title: '[BUG] '
+labels: ['bug']
 body:
   - type: markdown
     attributes:
@@ -33,6 +36,15 @@ body:
       label: Expected Behavior
       description: What you expected to happen
       placeholder: Tell us what should happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: Tell us what actually happens
     validations:
       required: true
 
