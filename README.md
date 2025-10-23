@@ -1,6 +1,46 @@
-# BetterDiscord Custom Theme Template
+# BetterDiscord Theme Template
 
 A customizable BetterDiscord theme template built with SCSS, featuring automated build processes and local development workflow.
+
+---
+
+## 📑 Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Quick Start](#quick-start)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Development Workflow](#development-workflow)
+- [Customization Guide](#customization-guide)
+  - [For Theme Developers](#for-theme-developers)
+  - [For End Users](#for-end-users-customizing-without-editing-theme-file)
+- [Deployment](#deployment)
+  - [GitHub Pages (Recommended)](#option-1-github-pages-recommended)
+  - [CDN Hosting](#option-2-cdn-hosting)
+  - [Self-Hosted](#option-3-self-hosted)
+- [Distribution](#distribution)
+- [Troubleshooting](#troubleshooting)
+- [Code Quality](#code-quality)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+
+---
+
+## 🚀 Quick Navigation
+
+| I want to... | Go to |
+|--------------|-------|
+| **Get started quickly** | [Quick Start](#quick-start) |
+| **Develop locally** | [Development Workflow](#development-workflow) |
+| **Customize colors and styles** | [Customization Guide](#customization-guide) |
+| **Deploy my theme** | [Deployment](#deployment) |
+| **Fix issues** | [Troubleshooting](#troubleshooting) |
+| **Learn all commands** | [Available Scripts](#available-scripts) |
+| **Understand the file structure** | [Project Structure](#project-structure) |
+
+---
 
 ## Features
 
