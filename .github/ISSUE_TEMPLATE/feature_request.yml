@@ -1,0 +1,151 @@
+name: Feature Suggestion
+description: Suggest a new feature or improvement for the theme
+title: '[FEATURE] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please provide detailed information about your idea.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: A brief, clear description of the feature you're proposing
+      placeholder: Add support for... / Improve the styling of... / Create a new variant for...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Describe the problem you're trying to solve
+      placeholder: I find it frustrating when... / It's difficult to... / There's no way to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see implemented in detail
+      placeholder: |
+        I would like to see...
+        This could be implemented by...
+        The feature would work like...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative solutions or features?
+      placeholder: |
+        Alternative 1: ...
+        Alternative 2: ...
+        I've also considered...
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: How would this feature benefit you and other users?
+      placeholder: |
+        - Improves readability by...
+        - Makes it easier to...
+        - Provides better accessibility for...
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockups or Examples
+      description: If you have mockups, screenshots, or examples from other themes, share them here
+      placeholder: Drag and drop images or paste URLs showing your vision
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature is this?
+      options:
+        - Color/Theme Customization
+        - Layout/Positioning
+        - Animation/Transition
+        - Typography/Fonts
+        - New Component Styling
+        - Accessibility Improvement
+        - Performance Enhancement
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Critical - Essential for my workflow
+        - High - Would greatly improve usability
+        - Medium - Nice improvement
+        - Low - Minor enhancement
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: If you have thoughts on how this could be implemented (CSS/SCSS), share them here
+      placeholder: |
+        ```scss
+        .example-element {
+          // Suggested styling
+        }
+        ```
+      render: scss
+
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: Potential Drawbacks
+      description: Are there any potential downsides or challenges with this feature?
+      placeholder: |
+        - Might conflict with...
+        - Could impact performance if...
+        - May not work well with...
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Similar Features in Other Themes
+      description: Do other BetterDiscord themes implement something similar? Please provide examples
+      placeholder: |
+        - Theme Name has this feature: [link]
+        - Similar implementation in Theme X
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, technical details, or information about the feature request
+      placeholder: Any additional information that might be helpful
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched for similar feature requests
+          required: true
+        - label: This feature is related to theme styling (not a BetterDiscord core feature)
+          required: true
+        - label: I am using the latest version of the theme
+          required: true

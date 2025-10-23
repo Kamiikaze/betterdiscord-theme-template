@@ -1,0 +1,128 @@
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below to help us resolve the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: Tell us what should happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Drag and drop images here or paste image URLs
+
+  - type: input
+    id: theme-version
+    attributes:
+      label: Theme Version
+      description: What version of the theme are you using?
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: betterdiscord-version
+    attributes:
+      label: BetterDiscord Version
+      description: What version of BetterDiscord are you using?
+      placeholder: e.g., 1.9.4
+    validations:
+      required: true
+
+  - type: input
+    id: discord-version
+    attributes:
+      label: Discord Version
+      description: What version of Discord are you using? (Settings → Appearance → scroll to bottom)
+      placeholder: e.g., Stable 270504
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: other-themes
+    attributes:
+      label: Other Themes/Plugins
+      description: List any other themes or plugins you have enabled
+      placeholder: |
+        - Theme: Another Theme v1.0
+        - Plugin: Some Plugin v2.0
+
+  - type: textarea
+    id: custom-css
+    attributes:
+      label: Custom CSS
+      description: If you're using Custom CSS, paste it here
+      placeholder: |
+        ```css
+        :root {
+          --primary-color: #ff0000;
+        }
+        ```
+      render: css
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: Any additional information that might be helpful
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following before submitting
+      options:
+        - label: I have searched for similar issues and found none
+          required: true
+        - label: I have tested with ONLY this theme enabled (no other themes/plugins)
+          required: true
+        - label: I am using the latest version of the theme
+          required: true
+        - label: I am using the latest version of BetterDiscord
+          required: true

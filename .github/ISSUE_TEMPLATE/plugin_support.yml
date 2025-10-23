@@ -1,0 +1,127 @@
+name: Plugin Support Request
+description: Request support for a BetterDiscord plugin or integration
+title: '[PLUGIN] '
+labels: ['plugin', 'enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting plugin support! Please provide detailed information about the plugin you'd like supported.
+
+  - type: input
+    id: plugin-name
+    attributes:
+      label: Plugin Name
+      description: What is the name of the plugin?
+      placeholder: e.g., Better Role Colors
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-author
+    attributes:
+      label: Plugin Author
+      description: Who created this plugin?
+      placeholder: e.g., Zerthox
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-url
+    attributes:
+      label: Plugin URL
+      description: Link to the plugin's repository or download page
+      placeholder: https://github.com/username/plugin-name
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin Version
+      description: What version of the plugin are you using?
+      placeholder: e.g., 2.1.0
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Plugin Description
+      description: Briefly describe what this plugin does
+      placeholder: This plugin allows users to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Styling Issue
+      description: Describe what styling issues or conflicts you're experiencing with this plugin
+      placeholder: |
+        The plugin's modal doesn't match the theme colors...
+        Plugin buttons are not styled correctly...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain why this plugin support is important to you
+      placeholder: I use this plugin daily for... and proper styling would improve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots showing the styling issues
+      placeholder: Drag and drop images here showing the unstyled elements
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this plugin support to you?
+      options:
+        - Critical - Essential for my workflow
+        - High - Would greatly improve usability
+        - Medium - Nice improvement
+        - Low - Minor enhancement
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current Workaround
+      description: If you have a temporary solution or custom CSS workaround, share it here
+      placeholder: |
+        ```css
+        .plugin-class {
+          background: var(--background-primary);
+        }
+        ```
+      render: css
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other relevant information, similar supported plugins, or documentation links
+      placeholder: |
+        - Plugin documentation: https://...
+        - Similar plugin that works: Plugin Name
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched for similar plugin support requests
+          required: true
+        - label: I am using the latest version of both the theme and the plugin
+          required: true
+        - label: I have tested the plugin with the theme to confirm the issue
+          required: true
