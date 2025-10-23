@@ -30,15 +30,15 @@ A customizable BetterDiscord theme template built with SCSS, featuring automated
 
 ## 🚀 Quick Navigation
 
-| I want to... | Go to |
-|--------------|-------|
-| **Get started quickly** | [Quick Start](#quick-start) |
-| **Develop locally** | [Development Workflow](#development-workflow) |
-| **Customize colors and styles** | [Customization Guide](#customization-guide) |
-| **Deploy my theme** | [Deployment](#deployment) |
-| **Fix issues** | [Troubleshooting](#troubleshooting) |
-| **Learn all commands** | [Available Scripts](#available-scripts) |
-| **Understand the file structure** | [Project Structure](#project-structure) |
+| I want to...                      | Go to                                         |
+|-----------------------------------|-----------------------------------------------|
+| **Get started quickly**           | [Quick Start](#quick-start)                   |
+| **Develop locally**               | [Development Workflow](#development-workflow) |
+| **Customize colors and styles**   | [Customization Guide](#customization-guide)   |
+| **Deploy my theme**               | [Deployment](#deployment)                     |
+| **Fix issues**                    | [Troubleshooting](#troubleshooting)           |
+| **Learn all commands**            | [Available Scripts](#available-scripts)       |
+| **Understand the file structure** | [Project Structure](#project-structure)       |
 
 ---
 
@@ -142,30 +142,30 @@ This will:
 ```
 betterdiscord-theme-template/
 ├── src/
-│   ├── modules/              # SCSS modules for different Discord components
-│   │   ├── _variables.scss   # Theme variables
-│   │   ├── _colors.scss      # Color definitions
-│   │   ├── _fonts.scss       # Font imports and definitions
-│   │   ├── _backgrounds.scss # Background styling
-│   │   ├── _discord-*.scss   # Discord component styles
-│   │   ├── _betterdiscord.scss # BetterDiscord specific styles
-│   │   └── _plugins.scss     # Plugin compatibility styles
-│   ├── utils/                # Build utilities
-│   │   └── buildLocal.js     # Local theme builder
-│   ├── config.js             # Environment configuration
-│   ├── local-build.js        # Local build script
-│   ├── local-watch.js        # Local watch script
-│   └── main.scss             # Main SCSS entry point
-├── dist/                     # Compiled output files
-│   ├── compiled-theme.css    # Expanded compiled CSS
-│   ├── compiled-theme.min.css # Minified compiled CSS
-│   └── *.local.theme.css     # Local test theme (inline CSS)
-├── assets/                   # Theme assets (fonts, images)
-├── example.theme.css         # User-facing theme file (template)
-├── .env.example              # Example environment configuration
-├── .prettierrc.js            # Prettier configuration
-├── eslint.config.js          # ESLint configuration
-└── package.json              # Project dependencies and scripts
+│   ├── modules/                  # SCSS modules for different Discord components
+│   │   ├── _variables.scss       # Theme variables
+│   │   ├── _colors.scss          # Color definitions
+│   │   ├── _fonts.scss           # Font imports and definitions
+│   │   ├── _backgrounds.scss     # Background styling
+│   │   ├── _discord-*.scss       # Discord component styles
+│   │   ├── _betterdiscord.scss   # BetterDiscord specific styles
+│   │   └── _plugins.scss         # Plugin compatibility styles
+│   ├── utils/                    # Build utilities
+│   │   └── buildLocal.js         # Local theme builder
+│   ├── config.js                 # Environment configuration
+│   ├── local-build.js            # Local build script
+│   ├── local-watch.js            # Local watch script
+│   └── main.scss                 # Main SCSS entry point
+├── dist/                         # Compiled output files
+│   ├── compiled-theme.css        # Expanded compiled CSS
+│   ├── compiled-theme.min.css    # Minified compiled CSS
+│   └── example.local.theme.css   # Local test theme (inline CSS)
+├── assets/                       # Theme assets (fonts, images)
+├── example.theme.css             # User-facing theme file (template)
+├── .env.example                  # Example environment configuration
+├── .prettierrc.js                # Prettier configuration
+├── eslint.config.js              # ESLint configuration
+└── package.json                  # Project dependencies and scripts
 ```
 
 ## Development Workflow
@@ -453,7 +453,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Credits
 
-- Created by [Kamiikaze](https://github.com/yourusername)
+- Template created by [Kamiikaze](https://github.com/Kamiikaze)
 - Built with [Sass](https://sass-lang.com/)
 - For use with [BetterDiscord](https://betterdiscord.app/)
 
@@ -470,4 +470,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Author information
 - Repository URLs
 - Support links
+- Readme links
 - License (if different from MIT)
